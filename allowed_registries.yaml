@@ -1,0 +1,16 @@
+# src: https://github.com/open-policy-agent/gatekeeper/blob/master/demo/agilebank/constraints/prod_repo_is_openpolicyagent.yaml
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: K8sAllowedRepos
+metadata:
+  name: allowed-registries
+spec:
+  match:
+    kinds:
+      - apiGroups: [""]
+        kinds: ["Pod"]
+    namespaces:
+      - "default"
+  parameters:
+    repos:
+      - "openpolicyagent"
+      - "demoaksacr01.azurecr.io"
