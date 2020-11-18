@@ -12,5 +12,8 @@ spec:
       - "default"
   parameters:
     repos:
-      - "openpolicyagent"
       - "demoaksacr01.azurecr.io"
+      # - "mcr.microsoft.com"
+      # - "gcr.io"
+      # - "registry.hub.docker.com"
+      # - "openpolicyagent"

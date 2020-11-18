@@ -15,5 +15,5 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: nginx # demoaksacr01.azurecr.io/web-app:1.0
+        image: demoaksacr01.azurecr.io/web-app:1.0
         imagePullPolicy: Always
