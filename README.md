@@ -1,0 +1,1 @@
+# kubernetes-allowed-registries-policy
